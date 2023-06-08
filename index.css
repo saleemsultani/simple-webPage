@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* Navigation Bar */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  font-size: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.icon-cart {
+  margin-left: 1rem;
+}
+
+.inner-icon-contact {
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 3px;
+}
+
+/* Hero */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.hero-container {
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(img/hero.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.header-container {
+  width: 120rem;
+  position: absolute;
+
+  /* In relation to PARENT size */
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+  width: 50%;
+  background-color: rgb(139, 72, 72);
+  padding: 2rem;
+  opacity: 0.6;
+}
+
+.hero-head {
+  font-size: 5rem;
+  opacity: 1;
+}
+
+.hero-text {
+  font-size: 2rem;
+  opacity: 1;
+}
+
+/* Order */
+.section-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(199, 3, 140, 0.6),
+    rgba(255, 225, 0, 0.6)
+  );
+}
+
+.carts-container {
+  display: flex;
+}
+
+.cart-inner-container {
+  /* width: 25.5rem; */
+}
+
+.line {
+  width: 200rem;
+  border-top: 1rem solid black;
+}
+
+.order-now {
+  color: white;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.cart {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  padding: 1.5rem;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  /* height: 40rem; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cart-img {
+  width: 20rem;
+  height: 20rem;
+  border-top-right-radius: 4rem;
+}
+
+.btn-order {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #f9d2d2;
+}
+
+.btn-order:hover {
+  background-color: #e663c1;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  /* Container */
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Header Container */
+  .header-container {
+    width: 100%;
+  }
+
+  /* Header Container Inner */
+  .header-container-inner {
+    width: 100%;
+  }
+
+  /* Hero Head */
+  .hero-head {
+    font-size: 3.5rem;
+  }
+
+  /* Hero Text */
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  /* Section Order */
+  .section-order {
+    padding: 5rem;
+  }
+
+  /* Cart */
+  .cart {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Navigation Bar */
+  .navbar {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  /* Hero Head */
+  .hero-head {
+    font-size: 3rem;
+  }
+
+  /* Hero Text */
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  /* Section Order */
+  .section-order {
+    padding: 2rem;
+  }
+
+  /* Cart Image */
+  .cart-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  /* Button Order */
+  .btn-order {
+    width: 8rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Navigation Bar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4rem;
+  }
+
+  /* Icon Cart */
+  .icon-cart {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  /* Header Container Inner */
+  .header-container-inner {
+    padding: 1rem;
+  }
+
+  /* Hero Head */
+  .hero-head {
+    font-size: 2.5rem;
+  }
+
+  /* Hero Text */
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  /* Section Order */
+  .section-order {
+    padding: 1rem;
+  }
+
+  /* Cart */
+  .cart {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  /* Cart Image */
+  .cart-img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* Button Order */
+  .btn-order {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
